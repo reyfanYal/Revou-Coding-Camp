@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* NAVBAR */
+nav {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    gap: 20px;
+    
+}
+
+/* NAVBAR END */
+
+
+/* BODY */
+body{
+    font-family: arial;
+    text-align: center;
+}
+.foto-profil{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #f4f4f4;
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    background-color: #b3acac;
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 1px -3px 15px -6px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tombol{
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.tombol:hover{
+    color: black;
+    background-color: wheat;
+    transition: 0.2s;
+}
+/* BODY END */
+
+
+
+.reyfan {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* KONTAK */
+body{
+    text-align: center;
+    text-align: center;
+}
+
+
+form {
+    margin: 20px;
+    padding: auto;
+
+}
+
+#h2 {
+    color:beige;
+    margin-top: 0px;
+}
+#Nama {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    height: 30px;
+    padding: 10px ;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+#Email {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    height: 30px;
+    padding: 10px ;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+#password {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    height: 30px;
+    padding: 10px ;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+#pesan {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    height: 60px;
+    padding: 10px  ; 
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    justify-content: left;
+}
+
+
+#tombol-submit{
+    background-color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#tombol-submit:hover{
+    color: red;
+}
+
+#Req {
+    color: red;
+    margin-top: 120px;
+}
+
+#tombol-sapa {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #f4f4f4;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    animation-name: kedip ; 
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
+#tombol-sapa:hover{
+    color: #000000;
+}
+
+
+#hai {
+    padding: 10px 2px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: #baa85f;
+    cursor: pointer;
+    animation-name: kedip ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#button-show {
+    width: 150px;
+    height: 40px;
+    margin: 50x;
+    border: none;
+    border-radius: 5px;
+    color: red;
+    background-color: rgb(252, 135, 135);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#button-show:hover {
+    color: #333;
+}
+
+/* Fleksibel Layar/Responsive Layar */
+
+@media (max-width: 600px) {
+    section{
+        width: 90%;
+    }
+}
+
+body.dark-mode {
+    color: white;
+    background-color: black;
+
+}
+/* Keyframe kedip */
+@keyframes kedip {
+    0% { background-color: #333; color: white;}
+    50% { background-color: gold; color: black;}
+    100% { background-color: white; color: white;}
+    
+}
